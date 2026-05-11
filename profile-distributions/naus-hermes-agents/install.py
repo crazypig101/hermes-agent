@@ -19,6 +19,7 @@ PROFILES_ROOT = BUNDLE_ROOT / "profiles"
 DEFAULT_TARGET = Path.home() / ".hermes" / "profiles"
 PROFILE_FILES = (
     "NAUS_AGENT_CORE.md",
+    "NAUS_ROLE_UPGRADE.md",
     "SOUL.md",
     "IDENTITY.md",
     "TOOLS.md",

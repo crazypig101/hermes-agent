@@ -23,13 +23,15 @@ To preserve an existing local `config.yaml`, omit `--force-config` as shown abov
 
 ## Learning And Skill Creation
 
-Every profile receives `NAUS_AGENT_CORE.md` plus the shared `naus-hermes-agent-core` skill. That adds a controlled loop for learning, self-improvement, research, and skill creation:
+Every profile receives `NAUS_AGENT_CORE.md`, a tailored `NAUS_ROLE_UPGRADE.md`, the shared `naus-hermes-agent-core` skill, and a profile-specific `naus-role-specialization` skill. That adds a controlled loop for learning, self-improvement, research, and skill creation:
 
 ```text
 observe -> record -> compare -> propose -> validate -> promote -> decay/rollback
 ```
 
 The included scripts stage sanitized learning events and skill proposals under `~/.hermes/learning/`. Durable fleet promotion remains gated by the agent roles: Alfred approves, Prometheus scores, Hephaestus packages, Nemesis/Themis audit, and Mnemosyne consolidates.
+
+Run `generate_role_upgrades.py` after changing role definitions to regenerate the profile-specific upgrade sidecars and skills.
 
 ## Hermes Desktop
 

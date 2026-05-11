@@ -24,6 +24,7 @@
       "feeds",
       "iris-health-digest",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall"
     ],
@@ -31,6 +32,7 @@
       "epistemological_budgeting",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall",
       "regime-position-sympathy-check"
@@ -39,6 +41,7 @@
       "epistemological_budgeting",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall",
       "source_apoptosis",
@@ -49,6 +52,7 @@
       "epistemological_budgeting",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "phantom-position-purger",
       "postmortem-ingest",
       "postmortem-recall"
@@ -58,6 +62,7 @@
       "epistemological_budgeting",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall"
     ],
@@ -65,6 +70,7 @@
       "epistemological_budgeting",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "oracle-writer-liveness-probe",
       "postmortem-ingest",
       "postmortem-recall"
@@ -73,6 +79,7 @@
       "epistemological_budgeting",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall",
       "proprioceptive_reflex",
@@ -83,6 +90,7 @@
       "feeds",
       "iris-health-digest",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall"
     ],
@@ -91,6 +99,7 @@
       "exit-signal-acknowledgment",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall"
     ],
@@ -98,6 +107,7 @@
       "epistemological_budgeting",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall"
     ],
@@ -106,6 +116,7 @@
       "failure-pattern-escalator",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "pathogen_traceback",
       "postmortem-ingest",
       "postmortem-recall"
@@ -115,6 +126,7 @@
       "feeds",
       "leisure",
       "narrative-heartbeat-publisher",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall"
     ],
@@ -123,6 +135,7 @@
       "feeds",
       "held-set-garbage-collector",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall",
       "recommendation-verifier",
@@ -133,6 +146,7 @@
       "epistemological_budgeting",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall"
     ],
@@ -140,6 +154,7 @@
       "epistemological_budgeting",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall"
     ],
@@ -148,6 +163,7 @@
       "epistemological_budgeting",
       "feeds",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall",
       "proprioceptive_reflex"
@@ -157,6 +173,7 @@
       "feeds",
       "iris-health-digest",
       "leisure",
+      "naus-role-specialization",
       "postmortem-ingest",
       "postmortem-recall"
     ]
@@ -164,5 +181,6 @@
   "shared_skills": [
     "naus-hermes-agent-core"
   ],
-  "core_contract": "NAUS_AGENT_CORE.md"
+  "core_contract": "NAUS_AGENT_CORE.md",
+  "role_upgrade": "NAUS_ROLE_UPGRADE.md"
 }

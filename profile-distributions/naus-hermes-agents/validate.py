@@ -10,7 +10,7 @@ from pathlib import Path
 
 BUNDLE_ROOT = Path(__file__).resolve().parent
 PROFILES_ROOT = BUNDLE_ROOT / "profiles"
-REQUIRED_FILES = {"SOUL.md", "config.yaml", "distribution.yaml"}
+REQUIRED_FILES = {"SOUL.md", "config.yaml", "distribution.yaml", "NAUS_AGENT_CORE.md", "NAUS_ROLE_UPGRADE.md"}
 FORBIDDEN_NAMES = {
     ".env",
     "auth.json",
