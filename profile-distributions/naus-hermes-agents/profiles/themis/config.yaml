@@ -49,8 +49,10 @@ platform_toolsets:
   - openclaw_state
   cli: *id001
 skills:
-  auto_create: false
-  auto_improve: false
+  auto_create: true
+  auto_improve: true
+  min_tool_calls_for_skill: 5
+  learning_loop: naus-hermes-agent-core
 toolsets: *id001
 delegation:
   max_iterations: 1

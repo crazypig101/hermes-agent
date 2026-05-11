@@ -160,5 +160,9 @@
       "postmortem-ingest",
       "postmortem-recall"
     ]
-  }
+  },
+  "shared_skills": [
+    "naus-hermes-agent-core"
+  ],
+  "core_contract": "NAUS_AGENT_CORE.md"
 }

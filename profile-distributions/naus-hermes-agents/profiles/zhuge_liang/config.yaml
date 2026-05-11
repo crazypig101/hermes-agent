@@ -85,9 +85,9 @@ skills:
   auto_create: true
   auto_improve: true
   min_tool_calls_for_skill: 5
+  learning_loop: naus-hermes-agent-core
 smart_routing:
   enabled: false
 toolsets: *id001
-
 terminal:
   cwd: ~/workspace

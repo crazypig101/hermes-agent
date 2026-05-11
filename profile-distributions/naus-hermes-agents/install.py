@@ -18,6 +18,7 @@ REPO_ROOT = BUNDLE_ROOT.parents[1]
 PROFILES_ROOT = BUNDLE_ROOT / "profiles"
 DEFAULT_TARGET = Path.home() / ".hermes" / "profiles"
 PROFILE_FILES = (
+    "NAUS_AGENT_CORE.md",
     "SOUL.md",
     "IDENTITY.md",
     "TOOLS.md",

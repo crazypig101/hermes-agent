@@ -2,7 +2,7 @@
 
 This is the sanitized public profile distribution for Eric DGX's Naus/NOUS Hermes Agent fleet, migrated from the previous OpenClaw runtime.
 
-The bundle includes 17 Hermes profiles, their persona/tool sidecar files, and profile-specific custom skills. It deliberately excludes private memory and runtime state: `LETTA_MEMORY.md`, SQLite databases, auth files, sessions, logs, caches, backups, webhook URLs, and Discord tokens are not part of this distribution.
+The bundle includes 17 Hermes profiles, their persona/tool sidecar files, a shared Naus Hermes Agent Core contract, and profile-specific custom skills. It deliberately excludes private memory and runtime state: `LETTA_MEMORY.md`, SQLite databases, auth files, sessions, logs, caches, backups, webhook URLs, and Discord tokens are not part of this distribution.
 
 Legacy names such as `openclaw_*`, `openclaw_full`, and `~/.openclaw` may still appear where they are runtime compatibility identifiers. The active identity is Naus/NOUS Hermes Agent.
 
@@ -20,6 +20,16 @@ python3 profile-distributions/naus-hermes-agents/install.py --target ~/.hermes/p
 ```
 
 To preserve an existing local `config.yaml`, omit `--force-config` as shown above. The installer overlays profile files and skills, but does not remove or overwrite memories, sessions, state databases, auth files, or logs.
+
+## Learning And Skill Creation
+
+Every profile receives `NAUS_AGENT_CORE.md` plus the shared `naus-hermes-agent-core` skill. That adds a controlled loop for learning, self-improvement, research, and skill creation:
+
+```text
+observe -> record -> compare -> propose -> validate -> promote -> decay/rollback
+```
+
+The included scripts stage sanitized learning events and skill proposals under `~/.hermes/learning/`. Durable fleet promotion remains gated by the agent roles: Alfred approves, Prometheus scores, Hephaestus packages, Nemesis/Themis audit, and Mnemosyne consolidates.
 
 ## Hermes Desktop
 

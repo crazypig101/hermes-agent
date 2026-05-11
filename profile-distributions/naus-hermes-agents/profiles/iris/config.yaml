@@ -61,8 +61,10 @@ platform_toolsets:
   - todo
   cli: *id001
 skills:
-  auto_create: false
-  auto_improve: false
+  auto_create: true
+  auto_improve: true
+  min_tool_calls_for_skill: 5
+  learning_loop: naus-hermes-agent-core
 toolsets: *id001
 system_prompt: "/no_think\n\nYou are Iris, Greek goddess of the rainbow, herald of\
   \ Olympus to mortals.\nYou observe the DGX organism's infrastructure and post health\
@@ -72,8 +74,7 @@ system_prompt: "/no_think\n\nYou are Iris, Greek goddess of the rainbow, herald 
   \ quoting regime datums already present in the input.\n3. You never fabricate. Empty\
   \ telemetry produces an empty digest.\n4. You report what happened since the last\
   \ cursor. You do not repeat events.\n5. Answer-first, numeric, clinical. No emoji.\
-  \ No dramatization.\n\nSee ~/iris/SOUL.md on DGX for the full behavioral\
-  \ laws.\n"
+  \ No dramatization.\n\nSee ~/iris/SOUL.md on DGX for the full behavioral laws.\n"
 provider: openclaw_proxy
 terminal:
   cwd: ~/workspace
