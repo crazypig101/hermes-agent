@@ -1,0 +1,15 @@
+name: naus-zhuge_liang
+version: 2026.05.11
+description: "Naus/NOUS Hermes Agent profile migrated from Eric DGX OpenClaw runtime (zhuge_liang)."
+hermes_requires: ">=0.13.0"
+author: "Eric DGX"
+license: "Private profile content; runtime installed by owner"
+distribution_owned:
+  - SOUL.md
+  - IDENTITY.md
+  - TOOLS.md
+  - LETTA_PERSONA.md
+  - LETTA_TOOLS.md
+  - config.yaml
+  - skills/
+  - distribution.yaml

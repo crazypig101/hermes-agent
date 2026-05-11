@@ -1,0 +1,164 @@
+{
+  "profiles": [
+    "alfred",
+    "ares",
+    "athena",
+    "chimera",
+    "gungnir",
+    "hephaestus",
+    "hermes-trader",
+    "iris",
+    "kairos",
+    "mnemosyne",
+    "nemesis",
+    "pheme",
+    "prometheus",
+    "talos",
+    "themis",
+    "tyche",
+    "zhuge_liang"
+  ],
+  "custom_skills_by_profile": {
+    "alfred": [
+      "epistemological_budgeting",
+      "feeds",
+      "iris-health-digest",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "ares": [
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall",
+      "regime-position-sympathy-check"
+    ],
+    "athena": [
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall",
+      "source_apoptosis",
+      "thesis-analysis",
+      "thesis-decay-cycler"
+    ],
+    "chimera": [
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "phantom-position-purger",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "gungnir": [
+      "entry-score-post-audit",
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "hephaestus": [
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "oracle-writer-liveness-probe",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "hermes-trader": [
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall",
+      "proprioceptive_reflex",
+      "validate-thesis-against-truth"
+    ],
+    "iris": [
+      "epistemological_budgeting",
+      "feeds",
+      "iris-health-digest",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "kairos": [
+      "epistemological_budgeting",
+      "exit-signal-acknowledgment",
+      "feeds",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "mnemosyne": [
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "nemesis": [
+      "epistemological_budgeting",
+      "failure-pattern-escalator",
+      "feeds",
+      "leisure",
+      "pathogen_traceback",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "pheme": [
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "narrative-heartbeat-publisher",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "prometheus": [
+      "epistemological_budgeting",
+      "feeds",
+      "held-set-garbage-collector",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall",
+      "recommendation-verifier",
+      "writer-health-remediation-proposer"
+    ],
+    "talos": [
+      "arbitrage_drift_hunter",
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "themis": [
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ],
+    "tyche": [
+      "concentration-aware-thesis",
+      "epistemological_budgeting",
+      "feeds",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall",
+      "proprioceptive_reflex"
+    ],
+    "zhuge_liang": [
+      "epistemological_budgeting",
+      "feeds",
+      "iris-health-digest",
+      "leisure",
+      "postmortem-ingest",
+      "postmortem-recall"
+    ]
+  }
+}

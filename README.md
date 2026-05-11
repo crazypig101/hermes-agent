@@ -79,6 +79,15 @@ hermes doctor       # Diagnose any issues
 
 📖 **[Full documentation →](https://hermes-agent.nousresearch.com/docs/)**
 
+### Naus/NOUS Hermes Agent Fleet
+
+This fork includes Eric DGX's sanitized Naus/NOUS Hermes Agent profile
+distribution at
+[`profile-distributions/naus-hermes-agents`](profile-distributions/naus-hermes-agents/).
+It contains the migrated multi-agent profile fleet, custom profile skills, and
+Hermes Desktop connection helper, while excluding private memories, sessions,
+databases, tokens, logs, and caches.
+
 ## CLI vs Messaging Quick Reference
 
 Hermes has two entry points: start the terminal UI with `hermes`, or run the gateway and talk to it from Telegram, Discord, Slack, WhatsApp, Signal, or Email. Once you're in a conversation, many slash commands are shared across both interfaces.

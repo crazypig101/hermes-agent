@@ -1,0 +1,93 @@
+compression:
+  threshold: 0.45
+custom_providers:
+- name: openclaw_proxy
+  api_key: local-placeholder
+  base_url: http://127.0.0.1:18895/v1
+  context_length: 128000
+  models:
+  - gpt-5.4
+  - athena_cortex
+- name: qwen36_local
+  api_key: local-placeholder
+  base_url: http://127.0.0.1:9001/v1
+  context_length: 65536
+  models:
+  - palmfuture/Qwen3.6-35B-A3B-GPTQ-Int4
+- name: ollama_local
+  api_key: local-placeholder
+  base_url: http://127.0.0.1:11434/v1
+  context_length: 65536
+  models:
+  - qwen2.5:7b
+  - gemma4:26b
+  - hf.co/bartowski/NousResearch_Hermes-4-14B-GGUF:Q4_K_M
+- name: gaming_pc_qwen36
+  api_key: local-placeholder
+  base_url: http://192.168.50.200:11434/v1
+  context_length: 32768
+  models:
+  - qwen3.6:35b-a3b
+delegation:
+  max_iterations: 30
+mcp_servers:
+  market_feed:
+    timeout: 30
+    url: http://127.0.0.1:8091/mcp/
+  omni_sensory:
+    timeout: 30
+    url: http://127.0.0.1:8093/mcp/
+  alpaca_data:
+    timeout: 30
+    url: http://127.0.0.1:8095/mcp/
+  alpaca_execution:
+    timeout: 60
+    url: http://127.0.0.1:8092/mcp/
+  crawl4ai:
+    timeout: 60
+    url: http://127.0.0.1:8101/mcp/
+  fabric:
+    timeout: 30
+    url: http://127.0.0.1:8112/mcp/
+  system_registry:
+    timeout: 30
+    url: http://127.0.0.1:8113/mcp/
+  unified_memory:
+    timeout: 30
+    url: http://127.0.0.1:8116/mcp/
+memory:
+  auto_save: true
+  memory_enabled: true
+  nudge_interval: 10
+  provider: default
+  user_profile_enabled: true
+model:
+  context_length: 128000
+  default: gpt-5.4
+  fallback_providers:
+  - openclaw_proxy
+  - gaming_pc_qwen36
+  provider: openclaw_proxy
+platform_toolsets:
+  api_server: &id001
+  - file
+  - web
+  - skills
+  - todo
+  - memory
+  - delegation
+  - messaging
+  - openclaw_full
+  - openclaw_orchestration
+  cli: *id001
+provider: openclaw_proxy
+skills:
+  auto_create: true
+  auto_improve: true
+  min_tool_calls_for_skill: 5
+smart_routing:
+  enabled: false
+toolsets: *id001
+
+terminal:
+  cwd: ~/workspace

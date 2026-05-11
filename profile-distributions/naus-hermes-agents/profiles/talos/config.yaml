@@ -1,0 +1,80 @@
+compression:
+  threshold: 0.45
+custom_providers:
+- name: qwen36_local
+  api_key: local-placeholder
+  base_url: http://127.0.0.1:9001/v1
+  context_length: 65536
+  models:
+  - palmfuture/Qwen3.6-35B-A3B-GPTQ-Int4
+- api_key: local-placeholder
+  base_url: http://127.0.0.1:11434/v1
+  context_length: 32768
+  models:
+  - qwen2.5:7b
+  - gemma4:26b
+  - hf.co/bartowski/NousResearch_Hermes-4-14B-GGUF:Q4_K_M
+  name: ollama_local
+- api_key: local-placeholder
+  base_url: http://192.168.50.200:11434/v1
+  context_length: 32768
+  models:
+  - qwen3.6:35b-a3b
+  name: gaming_pc_qwen36
+- name: openclaw_proxy
+  api_key: local-placeholder
+  base_url: http://127.0.0.1:18895/v1
+  context_length: 65536
+  models:
+  - gpt-5.4
+  - athena_cortex
+- name: gaming_pc_gemma4
+  base_url: http://192.168.50.200:8100/v1
+  api_key: local-placeholder
+  context_length: 20000
+  models:
+  - gemma-4-26b
+  - athena_cortex
+mcp_servers:
+  market_feed:
+    timeout: 30
+    url: http://127.0.0.1:8091/mcp/
+  system_registry:
+    timeout: 30
+    url: http://127.0.0.1:8113/mcp/
+memory:
+  auto_save: true
+  memory_enabled: true
+  nudge_interval: 10
+  provider: default
+  user_profile_enabled: true
+agent:
+  reasoning_effort: none
+model:
+  context_length: 65536
+  max_tokens: 2048
+  default: palmfuture/Qwen3.6-35B-A3B-GPTQ-Int4
+  fallback_providers:
+  - ollama_local
+  - gaming_pc_gemma4
+  provider: qwen36_local
+platform_toolsets:
+  api_server: &id001
+  - file
+  - terminal
+  - web
+  - skills
+  - openclaw_state
+  - openclaw_agents
+  - openclaw_hive
+  - memory
+  - todo
+  - code_execution
+  cli: *id001
+skills:
+  auto_create: true
+  auto_improve: true
+toolsets: *id001
+provider: openclaw_proxy
+terminal:
+  cwd: ~/workspace

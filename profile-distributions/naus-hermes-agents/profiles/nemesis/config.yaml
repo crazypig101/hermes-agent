@@ -1,0 +1,73 @@
+model:
+  default: palmfuture/Qwen3.6-35B-A3B-GPTQ-Int4
+  provider: qwen36_local
+  context_length: 65536
+  max_tokens: 2048
+  fallback_providers:
+  - ollama_local
+  - gaming_pc_gemma4
+custom_providers:
+- name: qwen36_local
+  api_key: local-placeholder
+  base_url: http://127.0.0.1:9001/v1
+  context_length: 65536
+  models:
+  - palmfuture/Qwen3.6-35B-A3B-GPTQ-Int4
+- name: ollama_local
+  base_url: http://127.0.0.1:11434/v1
+  api_key: local-placeholder
+  models:
+  - hermes3:8b
+  - gemma4:26b
+  - hf.co/bartowski/NousResearch_Hermes-4-14B-GGUF:Q4_K_M
+  context_length: 65536
+- api_key: local-placeholder
+  base_url: http://192.168.50.200:11434/v1
+  context_length: 32768
+  models:
+  - qwen3.6:35b-a3b
+  name: gaming_pc_qwen36
+- name: gaming_pc_gemma4
+  base_url: http://192.168.50.200:8100/v1
+  api_key: local-placeholder
+  context_length: 20000
+  models:
+  - gemma-4-26b
+  - athena_cortex
+platform_toolsets:
+  api_server: &id001
+  - openclaw_agents
+  - openclaw_hive
+  - openclaw_episodic
+  - openclaw_state
+  - openclaw_epigenome
+  - file
+  - web
+  - skills
+  - memory
+  - todo
+  cli: *id001
+toolsets: *id001
+mcp_servers:
+  market_feed:
+    url: http://127.0.0.1:8091/mcp/
+    timeout: 30
+  system_registry:
+    url: http://127.0.0.1:8113/mcp/
+    timeout: 30
+  omni_sensory:
+    url: http://127.0.0.1:8093/mcp/
+    timeout: 30
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  provider: default
+  auto_save: true
+  nudge_interval: 10
+compression:
+  threshold: 0.45
+skills:
+  auto_create: true
+  auto_improve: true
+terminal:
+  cwd: ~/workspace

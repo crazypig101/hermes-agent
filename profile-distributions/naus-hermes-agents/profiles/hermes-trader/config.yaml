@@ -1,0 +1,73 @@
+compression:
+  threshold: 0.45
+custom_providers:
+- name: qwen36_local
+  api_key: local-placeholder
+  base_url: http://127.0.0.1:9001/v1
+  context_length: 65536
+  models:
+  - palmfuture/Qwen3.6-35B-A3B-GPTQ-Int4
+- name: ollama_local
+  api_key: local-placeholder
+  base_url: http://127.0.0.1:11434/v1
+  context_length: 32768
+  models:
+  - hermes3:8b
+  - qwen2.5:7b
+  - gemma4:26b
+  - hf.co/bartowski/NousResearch_Hermes-4-14B-GGUF:Q4_K_M
+- api_key: local-placeholder
+  base_url: http://192.168.50.200:11434/v1
+  context_length: 32768
+  models:
+  - qwen3.6:35b-a3b
+  name: gaming_pc_qwen36
+- name: openclaw_proxy
+  api_key: local-placeholder
+  base_url: http://127.0.0.1:18895/v1
+  context_length: 32768
+  models:
+  - athena_cortex
+  - gpt-5.4
+mcp_servers:
+  alpaca_execution:
+    timeout: 60
+    url: http://127.0.0.1:8092/mcp/
+  market_feed:
+    timeout: 30
+    url: http://127.0.0.1:8091/mcp/
+  system_registry:
+    timeout: 30
+    url: http://127.0.0.1:8113/mcp/
+memory:
+  auto_save: true
+  memory_enabled: true
+  nudge_interval: 10
+  provider: default
+  user_profile_enabled: true
+model:
+  context_length: 65536
+  max_tokens: 2048
+  default: palmfuture/Qwen3.6-35B-A3B-GPTQ-Int4
+  fallback_providers:
+  - ollama_local
+  provider: qwen36_local
+platform_toolsets:
+  api_server: &id001
+  - openclaw_execution
+  - openclaw_state
+  - openclaw_agents
+  - openclaw_hive
+  - openclaw_episodic
+  - openclaw_epigenome
+  - web
+  - skills
+  - memory
+  - todo
+  cli: *id001
+skills:
+  auto_create: true
+  auto_improve: true
+toolsets: *id001
+terminal:
+  cwd: ~/workspace
